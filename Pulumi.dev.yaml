@@ -1,0 +1,59 @@
+encryptionsalt: v1:MpzEr7rmtmk=:v1:7F/OxJc1igxQvYAc:XixpNiI7v8tIA3f7xdCUb2VhGmTLXg==
+config:
+  aws:accessKey:
+    secure: v1:1crwG57GtuTRPmG0:X+6GEiPtEDp87VT+t9KwSyQ+0m0ODcxuY0UqdBJj29ovYccG
+  aws:region: "us-east-2"
+  aws:secretKey:
+    secure: v1:Uz+io4mcNO+MsSRv:ARRMki1PxPtOxHE/RG+fvnxa6O8DCvkUjCjZ/meYPGJUu7PcckRwmqTxktg7Nct4RHhqwIguy7k=
+  gcp:project: "devv-405400"
+  iac-pulumi:projectId: "devv-405400"
+  iac-pulumi:allocated_storage: "20"
+  iac-pulumi:appPort: "8080"
+  iac-pulumi:bucketName: "devv-bucket"
+  # rds instance
+  iac-pulumi:db_engine: "mariadb"
+  iac-pulumi:db_name: "csye6225"
+  iac-pulumi:db_password: "CGcg2023.."
+  iac-pulumi:db_username: "csye6225"
+  # google cloud store
+  iac-pulumi:gcs_bucket_location: "US-EAST1"
+  iac-pulumi:httpPort: "80"
+  iac-pulumi:httpsPort: "443"
+  iac-pulumi:identifier: "csye6225"
+  iac-pulumi:instance_class: "db.t2.micro"
+  # ec2 instance
+  # iac-pulumi:instanceAmi: "ami-0a41761eb4e659d5d"
+  # iac-pulumi:instanceAmi: "ami-0245b552ff4072f88"ami-0d8094aabd91ace44/ami-0c89673655dc9ea35
+  iac-pulumi:instanceAmi: "ami-08a15cac8e1de723a"
+  iac-pulumi:instanceType: "t2.micro"
+  iac-pulumi:internetGatewayName: "myInternetGateway"
+  iac-pulumi:keyName: "web_instance_keypair"
+  # lambda
+  iac-pulumi:lambda_filePath: "../serverless.zip"
+  iac-pulumi:mailgunApiKey:
+    secure: v1:E/qA2jRH3YWaTKmc:bprC75NxiVw8xwHxlILrdgaB1OqVM8eWvsG7GVKYU8Q0gohlyZlhAVdJvVpwz0Wr5u/l6j2C2VLns72j27Cso4/9
+  # route 53
+  iac-pulumi:mainDomain: "gecoding.me"
+  iac-pulumi:numOfSubnets: "3"
+  iac-pulumi:privateRouteTableName: "privateRouteTable"
+  iac-pulumi:privateSubnetName: "private-subnet"
+  iac-pulumi:publicInternetAccessRouteName: "public-internet-access"
+  iac-pulumi:publicRouteCidr: "0.0.0.0/0"
+  iac-pulumi:publicRouteTableName: "publicRouteTable"
+  iac-pulumi:publicSubnetName: "public-subnet"
+  iac-pulumi:publicly_accessible: "false"
+  iac-pulumi:readCapacityUnits: "5"
+  iac-pulumi:recordType: "A"
+  iac-pulumi:region: "us-east-2"
+  iac-pulumi:rootVolumeSize: "25"
+  iac-pulumi:skip_final_snapshot: "true"
+  # security group
+  iac-pulumi:sshPort: "22"
+  iac-pulumi:subDomain: "dev.gecoding.me"
+  iac-pulumi:subnetMask: "24"
+  iac-pulumi:subnetPrefixLength: "24"
+  iac-pulumi:ttl: "60"
+  iac-pulumi:vpcCidr: "10.0.0.0/16"
+  iac-pulumi:vpcName: "myVPC"
+  iac-pulumi:writeCapacityUnits: "5"
+  iac-pulumi:sslCertificateArn: "arn:aws:acm:us-east-2:978359772160:certificate/6d7ebf6d-5353-4850-828d-6f5243eff057"
